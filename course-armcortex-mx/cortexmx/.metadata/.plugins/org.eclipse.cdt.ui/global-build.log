@@ -1,28 +1,28 @@
-21:47:21 **** Incremental Build of configuration Debug for project interrupt_priority ****
+21:49:49 **** Incremental Build of configuration Debug for project exception_entry_exit ****
 make -j12 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F429ZITx -DSTM32F4 -DNUCLEO_F429ZI -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "interrupt_priority.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/hanchi/cm4/course-armcortex-mx/cortexmx/interrupt_priority/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interrupt_priority.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: interrupt_priority.elf
+arm-none-eabi-gcc -o "exception_entry_exit.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/hanchi/cm4/course-armcortex-mx/cortexmx/exception_entry_exit/STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exception_entry_exit.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exception_entry_exit.elf
  
-arm-none-eabi-size   interrupt_priority.elf 
-arm-none-eabi-objdump -h -S  interrupt_priority.elf  > "interrupt_priority.list"
+arm-none-eabi-size   exception_entry_exit.elf 
+arm-none-eabi-objdump -h -S  exception_entry_exit.elf  > "exception_entry_exit.list"
    text	   data	    bss	    dec	    hex	filename
-   3944	    120	   1584	   5648	   1610	interrupt_priority.elf
+   3852	    108	   1588	   5548	   15ac	exception_entry_exit.elf
 Finished building: default.size.stdout
  
-Finished building: interrupt_priority.list
+Finished building: exception_entry_exit.list
  
-21:47:26 **** Incremental Build of configuration Debug for project interrupt_priority ****
+21:49:57 **** Incremental Build of configuration Debug for project exception_entry_exit ****
 make -j12 all 
-arm-none-eabi-size   interrupt_priority.elf 
+arm-none-eabi-size   exception_entry_exit.elf 
    text	   data	    bss	    dec	    hex	filename
-   3944	    120	   1584	   5648	   1610	interrupt_priority.elf
+   3852	    108	   1588	   5548	   15ac	exception_entry_exit.elf
 Finished building: default.size.stdout
  
-21:47:45 **** Incremental Build of configuration Debug for project interrupt_priority ****
+21:52:54 **** Incremental Build of configuration Debug for project exception_entry_exit ****
 make -j12 all 
-arm-none-eabi-size   interrupt_priority.elf 
+arm-none-eabi-size   exception_entry_exit.elf 
    text	   data	    bss	    dec	    hex	filename
-   3944	    120	   1584	   5648	   1610	interrupt_priority.elf
+   3852	    108	   1588	   5548	   15ac	exception_entry_exit.elf
 Finished building: default.size.stdout
  
